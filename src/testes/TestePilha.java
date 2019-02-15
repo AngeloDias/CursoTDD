@@ -24,4 +24,20 @@ public class TestePilha {
         Assert.assertEquals("primeiro", p.top());
     }
 
+    @Test
+    public void pushAndPop() {
+        Pilha p = new Pilha();
+
+        p.push("primeiro");
+        p.push("segundo");
+        Assert.assertEquals(2, p.length());
+        Assert.assertEquals("segundo", p.top());
+
+        Object outP = p.pop();
+
+        Assert.assertEquals(1, p.length());
+        Assert.assertEquals("primeiro", p.top());
+        Assert.assertEquals("segundo", outP);
+    }
+
 }

@@ -1,11 +1,11 @@
 package classes;
 
 public class Pilha {
-    private Object element;
-    private int quant;
+    private Object [] elements = new Object[10];
+    private int quant = 0;
 
     public boolean isEmpty() {
-        return this.element == null;
+        return this.quant == 0;
     }
 
     public int length() {
@@ -13,11 +13,20 @@ public class Pilha {
     }
 
     public void push(Object element) {
-        this.element = element;
+        this.elements[quant] = element;
         this.quant++;
     }
 
     public Object top() {
-        return this.element;
+        return this.elements[quant-1];
     }
+
+    public Object pop() {
+        Object top = this.top();
+
+        this.quant--;
+
+        return top;
+    }
+
 }
