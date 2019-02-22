@@ -1,5 +1,8 @@
 package classes;
 
+import exceptions.EmptyStackExceptionTDD;
+import exceptions.FullStackExceptionTDD;
+
 public class Pilha {
     private Object [] elements;
     private int quant = 0;

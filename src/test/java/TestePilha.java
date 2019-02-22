@@ -1,8 +1,6 @@
-package testes;
-
-import classes.EmptyStackExceptionTDD;
-import classes.FullStackExceptionTDD;
 import classes.Pilha;
+import exceptions.EmptyStackExceptionTDD;
+import exceptions.FullStackExceptionTDD;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
